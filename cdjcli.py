@@ -39,7 +39,7 @@ def get_project_name(project_name: str = typer.Option(..., prompt="Please enter 
             console.print(f"Hi, you are a new project with the name {project_name}")
 
         else:
-            console.print(f"[bold red]Please create virtual environment")
+            console.print("[bold red]Please create virtual environment")
 
     except FileExistsError:
         # directory already exists
